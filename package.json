@@ -1,0 +1,27 @@
+{
+  "name": "@brandonleon/proto_bundler",
+  "version": "0.0.1",
+  "description": "An easy module-based TypeScript bundler prototype implementation, for personal to understand the last-gen bundler design princples.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brandon-Ln/proto_bundler.git"
+  },
+  "keywords": [
+    "prototype",
+    "learning_reason",
+    "bundler"
+  ],
+  "author": "Brandon Leon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brandon-Ln/proto_bundler/issues"
+  },
+  "homepage": "https://github.com/Brandon-Ln/proto_bundler#readme",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
