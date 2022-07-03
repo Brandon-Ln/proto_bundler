@@ -1,4 +1,9 @@
-import { greeting } from "./greeting";
-import name from "./name";
+const start = require("../dist/index.js").start;
+const path = require("path");
 
-console.log(`My name is ${name}, ${greeting}`);
+const entry = path.join(".", "module/index.js");
+const output = path.join(".", "output/bundle.js");
+
+start(entry, output, (err) => {
+  console.error("error happened!", err);
+});

@@ -4,7 +4,9 @@
   "description": "An easy module-based TypeScript bundler prototype implementation, for personal to understand the last-gen bundler design princples.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "result": "node ./demo/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,18 @@
   },
   "homepage": "https://github.com/Brandon-Ln/proto_bundler#readme",
   "dependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/traverse": "^7.18.6",
+    "@types/babel__traverse": "^7.17.1",
+    "babylon": "^6.18.0",
+    "fs-extra": "^10.1.0",
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.1.19",
+    "@types/babylon": "^6.16.6",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.0.0"
   }
 }
